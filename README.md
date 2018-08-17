@@ -5,11 +5,16 @@ node-WisdomOfChopra is a Node.js reimplementation of [skepticCanary's WisdomOfCh
 All credit goes to skepticCanary!
 
 ## Usage
+
+Install the package with npm
+
+    npm install wisdom-of-chopra -s
+
 Import the module
 
-    const wisdom = require("wisdom.js");
-    
+    const wisdom = require("wisdom-of-chopra");
+
 Call getQuotes() method
 
     // Sets wiseWords to "The cosmos is beyond infinite observations"
-    let wiseWords = wisdom.getQuote(); 
+    let wiseWords = wisdom.getQuote();
