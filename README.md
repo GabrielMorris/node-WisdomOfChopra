@@ -14,7 +14,7 @@ Import the module
 
     const wisdom = require("wisdom-of-chopra");
 
-Call getQuotes() method
+Call getQuote() method
 
     // Sets wiseWords to "The cosmos is beyond infinite observations"
     let wiseWords = wisdom.getQuote();
