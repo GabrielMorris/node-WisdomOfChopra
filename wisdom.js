@@ -10,7 +10,8 @@ exports.getQuote = function() {
     return generateAnimalQuote(quotes);
   } else {
     // Get four random numbers for the four random parts of a quote
-    let randomNumberArray = generateRandomNumberArray();
+    let randomNumberArray = generateRandomNumberArray(quotes);
+    console.log(randomNumberArray);
 
     // Return quote string
     return generateQuoteString(quotes, randomNumberArray);
@@ -18,7 +19,7 @@ exports.getQuote = function() {
 
   // Function for getting random number based on part length
   function getRandom(part) {
-    return Math.floor(Math.Random * part.length);
+    return Math.floor(Math.random() * part);
   }
 
   // Function for generating quote string
@@ -34,7 +35,7 @@ exports.getQuote = function() {
   }
 
   // Function for generating random numbers
-  function generateRandomNumberArray() {
+  function generateRandomNumberArray(quotes) {
     return [
       getRandom(quotes.partOne.length),
       getRandom(quotes.partTwo.length),
