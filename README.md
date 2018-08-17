@@ -11,4 +11,5 @@ Import the module
     
 Call getQuotes() method
 
-    let wiseWords = wisdom.getQuote(); // Sets wiseWords to "The cosmos is beyond infinite observations"
+    // Sets wiseWords to "The cosmos is beyond infinite observations"
+    let wiseWords = wisdom.getQuote(); 
