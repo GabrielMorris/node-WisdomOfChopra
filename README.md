@@ -6,6 +6,9 @@ All credit goes to skepticCanary!
 
 ## Usage
 Import the module
+
     const wisdom = require("wisdom.js");
+    
 Call getQuotes() method
+
     let wiseWords = wisdom.getQuote(); // Sets wiseWords to "The cosmos is beyond infinite observations"
