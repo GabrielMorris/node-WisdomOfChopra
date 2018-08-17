@@ -1,7 +1,7 @@
 "use strict";
 const quotes = require("./quotes.json");
 
-exports.getQuotes = function() {
+exports.getQuote = function() {
   let random = Math.floor(Math.random() * 100);
 
   if (random < 2) {
