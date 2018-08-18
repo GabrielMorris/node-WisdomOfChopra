@@ -31,7 +31,10 @@ exports.getQuote = function() {
 
   // Function for generating animal quote string
   function generateAnimalQuote(quotes) {
-    return `${quotes.animalsOne} are ${quotes.animalsTwo}`;
+    let randOne = getRandom(quotes.animalsOne);
+    let randTwo = getRandom(quotes.animalsTwo);
+
+    return `${quotes.animalsOne[randOne]} are ${quotes.animalsTwo[randTwo]}`;
   }
 
   // Function for generating random numbers
