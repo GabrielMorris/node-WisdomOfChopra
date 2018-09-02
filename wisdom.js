@@ -1,5 +1,5 @@
-"use strict";
-const quotes = require("./quotes.json");
+'use strict';
+const quotes = require('./quotes.json');
 
 exports.getQuote = function() {
   // Get random number between 0-100
@@ -11,7 +11,6 @@ exports.getQuote = function() {
   } else {
     // Get four random numbers for the four random parts of a quote
     let randomNumberArray = generateRandomNumberArray(quotes);
-    console.log(randomNumberArray);
 
     // Return quote string
     return generateQuoteString(quotes, randomNumberArray);
@@ -31,8 +30,8 @@ exports.getQuote = function() {
 
   // Function for generating animal quote string
   function generateAnimalQuote(quotes) {
-    let randOne = getRandom(quotes.animalsOne);
-    let randTwo = getRandom(quotes.animalsTwo);
+    let randOne = getRandom(quotes.animalsOne.length);
+    let randTwo = getRandom(quotes.animalsTwo.length);
 
     return `${quotes.animalsOne[randOne]} are ${quotes.animalsTwo[randTwo]}`;
   }
